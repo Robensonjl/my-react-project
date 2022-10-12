@@ -1,11 +1,15 @@
 import "./App.css";
 
-function WelcomeIn() {
+function Greeting() {
 	const greeting = { name: "Robenson" };
 	const mainGreet = <h1>Hello {greeting.name}!</h1>;
+	return mainGreet;
+}
+
+function WelcomeIn() {
 	const welcome = (
 		<>
-			{mainGreet}
+			<Greeting />
 			<h2>Welcome</h2>
 		</>
 	);
